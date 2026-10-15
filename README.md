@@ -32,8 +32,6 @@ To explore the SQL scripts, concepts, and experiment documentation locally, clon
  Clone the repository
 git clone https://github.com/Shiva-Ganesh-Varikuppala/DBMS/
 
- Navigate into the project directory
-cd DBMS-Lab_File
 
 ## 👨‍💻 Author
 SHIVAGANESH VARIKUPPALA
