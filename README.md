@@ -30,7 +30,7 @@ This repository covers 10 comprehensive lab experiments ranging from basic Entit
 ## 🚀 How to Use This Repository
 To explore the SQL scripts, concepts, and experiment documentation locally, clone this repository to your machine:
  Clone the repository
-git clone https://github.com/coder-with-ai/DBMS-Lab_File.git
+git clone https://github.com/Shiva-Ganesh-Varikuppala/DBMS/
 
  Navigate into the project directory
 cd DBMS-Lab_File
