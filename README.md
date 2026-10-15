@@ -1,81 +1,175 @@
-# DBMS Lab Experiments Repository
+# Database Management Systems (DBMS) Laboratory
 
-Welcome to my Database Management Systems (DBMS) lab repository documenting practical SQL and database design coursework from the B.Tech CSE program.
-
-This repository covers 10 comprehensive lab experiments ranging from basic Entity-Relationship modeling and DDL/DML commands to advanced concepts like recursive CTEs, transaction management, and query optimization. 
-
-## 📂 Repository Structure
-
-```text
-DBMS/
-├── README.md                 # Main overview and navigation
-├── Lab 1/                    # ER Modeling
-│   ├── Practical 1.pdf
-│   └── Readme.md
-├── Lab 2/                    # Relational Schema & DDL
-│   ├── Practical 2.pdf
-│   └── Readme.md
-├── Lab 3/                    # Basic SQL & Aggregation
-│   ├── Experiment 3.sql
-│   ├── Outputs/
-│   │   └── outputs.md
-│   └── Readme.md
-├── Lab 4/                    # Joins & Subqueries
-│   ├── Experiment 4.sql
-│   ├── Output.md
-│   └── Readme.md
-├── Lab 5/                    # Views & CTEs
-│   ├── Experiment 5.sql
-│   ├── Output.md
-│   └── Readme.md
-├── Lab 6/                    # Stored Procedures & Triggers
-│   ├── Experiment 6.sql
-│   └── Readme.md
-├── Lab 7/                    # Normalization (Coming Soon)
-│   └── Readme.md
-├── Lab 8/                    # Transactions & Concurrency (Coming Soon)
-│   └── Readme.md
-├── Lab 9/                    # Indexing & Performance (Coming Soon)
-│   └── Readme.md
-└── Lab 10/                   # Query Optimization (Coming Soon)
-    └── Readme.md
-```
-
-## 📚 Experiments Overview
-
-| Lab | Experiment Title / Aim | Status | Link |
-|:---:|:---|:---:|:---|
-| **1** | **ER Modeling:** Design an ER diagram for an Indian e-commerce platform with complex entities, relationships, and participation constraints. | ✅ Completed | [View Lab 1](./Lab%201/Readme.md) |
-| **2** | **Relational Schema & DDL:** Convert ER diagram to relational schema with primary keys, foreign keys, and integrity constraints. | ✅ Completed | [View Lab 2](./Lab%202/Readme.md) |
-| **3** | **Basic SQL & Aggregation:** Create schema, insert 30+ records, and demonstrate SELECT, GROUP BY, HAVING, and CASE. | ✅ Completed | [View Lab 3](./Lab%203/Readme.md) |
-| **4** | **Joins & Subqueries:** Write queries using INNER, LEFT, self, and 3-way joins, plus correlated subqueries and set operations. | ✅ Completed | [View Lab 4](./Lab%204/Readme.md) |
-| **5** | **Views & CTEs:** Create SQL views for summary/hierarchy and implement a recursive CTE for reporting chains. | ✅ Completed | [View Lab 5](./Lab%205/Readme.md) |
-| **6** | **Stored Procedures & Triggers:** Create `transfer_employee` procedure with validation, and triggers for salary audit logging. | ✅ Completed | [View Lab 6](./Lab%206/Readme.md) |
-| **7** | **Normalization:** Normalize a Sales table step-by-step from UNF to 3NF and BCNF, verifying lossless joins. | ⏳ Coming Soon | [View Lab 7](./Lab%207/Readme.md) |
-| **8** | **Transactions & Concurrency:** Implement transactions with SAVEPOINT and simulate isolation levels and partial failures. | ⏳ Coming Soon | [View Lab 8](./Lab%208/Readme.md) |
-| **9** | **Indexing & Performance:** Create a 5,000-record Railway Booking table and benchmark performance using EXPLAIN and composite indexes. | ⏳ Coming Soon | [View Lab 9](./Lab%209/Readme.md) |
-| **10** | **Query Optimization:** Generate a 10,000-row dataset, analyze 5 slow queries, and optimize using indexing and query rewriting. | ⏳ Coming Soon | [View Lab 10](./Lab%2010/Readme.md) |
+<p align="center">
+  <img src="https://img.shields.io/badge/Course-DBMS%20Lab-0052CC?style=for-the-badge&logo=googledatastudio&logoColor=white" alt="Course Badge" />
+  <img src="https://img.shields.io/badge/RDBMS-MySQL%208.0%2B-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL Badge" />
+  <img src="https://img.shields.io/badge/Degree-B.Tech%20CSE-8A2BE2?style=for-the-badge" alt="Degree Badge" />
+  <img src="https://img.shields.io/badge/Status-Lab%20Practical%20Portfolio-success?style=for-the-badge" alt="Status Badge" />
+</p>
 
 ---
 
-## 🚀 How to Use This Repository
-To explore the SQL scripts, concepts, and experiment documentation locally, clone this repository to your machine:
+## 🎓 Academic Profile & Course Information
 
+| Field | Details |
+| :--- | :--- |
+| **Student Name** | **Shiva Ganesh Varikuppala** |
+| **Course Title** | Database Management Systems Laboratory |
+| **Academic Program** | B.Tech — Computer Science & Engineering |
+| **Academic Term** | Semester 03 |
+| **Primary RDBMS** | MySQL Server 8.0+ / MySQL Workbench |
+| **Repository URL** | [github.com/Shiva-Ganesh-Varikuppala/DBMS](https://github.com/Shiva-Ganesh-Varikuppala/DBMS) |
+
+---
+
+## 📌 Course Abstract & Overview
+
+This laboratory repository documents a structured, hands-on progression through fundamental and advanced database engineering principles. Experiments follow standard university curriculum standards, bridging theoretical database design with industry-standard relational query construction and performance tuning.
+
+### Key Competencies Developed
+- **Conceptual Modeling**: Entity-Relationship (ER) diagrams, cardinality constraints, weak entities, and specialization/generalization hierarchies.
+- **Relational Schema Design**: Mapping ER entities to relational schemas with candidate keys, foreign key constraints (`ON DELETE CASCADE`, `SET NULL`), and domain integrity.
+- **DML & Advanced Querying**: Aggregate analytics (`GROUP BY`, `HAVING`), conditional projection (`CASE ... END`), and multi-table operations (Inner, Left, Self, and 3-Way joins).
+- **Procedural SQL & Optimization**: Updatable database views, Recursive Common Table Expressions (CTEs), execution plan evaluation (`EXPLAIN`), and PL/SQL procedures/triggers.
+- **Data Integrity & Normalization**: Stepwise normalization from UNF through BCNF, ACID compliance, and concurrency control.
+
+---
+
+## 📂 Repository Organization
+
+```text
+DBMS/
+├── README.md                      # Comprehensive course overview and index
+├── Lab 1/                         # Conceptual ER Modeling
+│   ├── Practical 1.pdf            # Lab report & conceptual ER diagram
+│   └── Readme.md                  # Problem definition & entity design
+├── Lab 2/                         # Relational Schema Design & DDL
+│   ├── Practical 2.pdf            # Relational mapping & constraint report
+│   └── Readme.md                  # Table schemas & integrity rules
+├── Lab 3/                         # Schema Construction & Aggregation
+│   ├── Experiment 3.sql           # DDL, 30+ record population, DQL queries
+│   ├── Outputs/                   # Execution output artifacts
+│   │   └── outputs.md
+│   └── Readme.md                  # Lab documentation & query descriptions
+├── Lab 4/                         # Advanced Relational Joins & Subqueries
+│   ├── Experiment 4.sql           # Multi-table joins, subqueries & EXPLAIN
+│   ├── Output.md                  # Execution snapshots & query plan proof
+│   └── Readme.md                  # Theoretical rationale & query notes
+├── Lab 5/                         # Views & Recursive Common Table Expressions
+│   ├── Experiment 5.sql           # Simple/complex views, CTE hierarchy traversal
+│   ├── Output.md                  # Terminal & GUI verification snapshots
+│   └── Readme.md                  # Updatability rules & recursive CTE notes
+├── Lab 6/                         # Procedural PL/SQL: Procedures & Triggers
+│   ├── Experiment 6.sql           # Stored procedures & salary audit triggers
+│   └── Readme.md                  # Procedure specification & trigger lifecycle
+├── Lab 7/                         # Database Normalization (UNF to BCNF)
+│   └── Readme.md                  # Lossless decomposition & dependency preservation
+├── Lab 8/                         # Concurrency Control & ACID Transactions
+│   └── Readme.md                  # Transaction isolation levels & SAVEPOINT handling
+├── Lab 9/                         # Index Structures & Performance Tuning
+│   └── Readme.md                  # B-Tree composite indexing & execution cost analysis
+└── Lab 10/                        # Query Optimization & Execution Plan Analysis
+    └── Readme.md                  # Bottleneck diagnosis & query restructuring
+```
+
+---
+
+## 🧪 Experiments Index & Lab Matrix
+
+| Lab # | Experiment Title | Core Topics & SQL Features | Lab Guide | Source Code / Artifacts | Status |
+| :---: | :--- | :--- | :---: | :---: | :---: |
+| **01** | **Entity-Relationship Modeling** | Weak entities, composite/multi-valued attributes, generalization, cardinality | [Documentation](./Lab%201/Readme.md) | [Practical 1.pdf](./Lab%201/Practical%201.pdf) | ✅ Verified |
+| **02** | **Relational Schema & DDL Mapping** | DDL `CREATE TABLE`, Primary/Foreign keys, referential integrity | [Documentation](./Lab%202/Readme.md) | [Practical 2.pdf](./Lab%202/Practical%202.pdf) | ✅ Verified |
+| **03** | **Data Manipulation & Aggregation** | 30+ records dataset, `GROUP BY`, `HAVING`, `CASE` conditional evaluation | [Documentation](./Lab%203/Readme.md) | [Experiment 3.sql](./Lab%203/Experiment%203.sql) | ✅ Verified |
+| **04** | **Complex Joins & Subqueries** | Self joins, 3-way joins, correlated subqueries, set operations, `EXPLAIN` | [Documentation](./Lab%204/Readme.md) | [Experiment 4.sql](./Lab%204/Experiment%204.sql) | ✅ Verified |
+| **05** | **Views & Recursive CTEs** | Complex updatable views, self-referencing hierarchy, `WITH RECURSIVE` | [Documentation](./Lab%205/Readme.md) | [Experiment 5.sql](./Lab%205/Experiment%205.sql) | ✅ Verified |
+| **06** | **PL/SQL Procedures & Triggers** | Stored procedures with exception handling, `BEFORE/AFTER` audit triggers | [Documentation](./Lab%206/Readme.md) | [Experiment 6.sql](./Lab%206/Experiment%206.sql) | ✅ Verified |
+| **07** | **Schema Normalization** | Functional dependencies, 1NF, 2NF, 3NF, BCNF lossless verification | [Documentation](./Lab%207/Readme.md) | *Schema in prep* | ⏳ In Progress |
+| **08** | **Transactions & Concurrency** | ACID compliance, `SAVEPOINT`, dirty/non-repeatable read simulation | [Documentation](./Lab%208/Readme.md) | *Scripts in prep* | ⏳ In Progress |
+| **09** | **Indexing & Query Performance** | 5,000+ rows dataset, B-Tree indexes, cardinality, `EXPLAIN ANALYZE` | [Documentation](./Lab%209/Readme.md) | *Scripts in prep* | ⏳ In Progress |
+| **10** | **Query Profiling & Optimization** | Table scan elimination, query refactoring, index hinting | [Documentation](./Lab%2010/Readme.md) | *Scripts in prep* | ⏳ In Progress |
+
+---
+
+## 🗄️ Relational Schema Benchmark (`LabPracticalDB`)
+
+The core hands-on experiments (Labs 3–5) are implemented on the normalized enterprise schema **`LabPracticalDB`**:
+
+```mermaid
+erDiagram
+    DEPARTMENT ||--o{ EMPLOYEE : employs
+    EMPLOYEE ||--o{ WORKS_ON : performs
+    PROJECT ||--o{ WORKS_ON : includes
+    EMPLOYEE ||--o{ EMPLOYEE : manages
+
+    DEPARTMENT {
+        int dept_id PK
+        varchar dept_name
+    }
+    EMPLOYEE {
+        int emp_id PK
+        varchar emp_name
+        decimal salary
+        int dept_id FK
+        int manager_id FK
+    }
+    PROJECT {
+        int proj_id PK
+        varchar proj_name
+        decimal budget
+    }
+    WORKS_ON {
+        int emp_id PK_FK
+        int proj_id PK_FK
+        int hours_worked
+    }
+```
+
+---
+
+## 💻 Execution & Verification Guide
+
+### 1. Prerequisites
+- **RDBMS**: MySQL Server 8.0 or higher
+- **Client**: MySQL Shell / Command-Line Client or MySQL Workbench 8.0+
+
+### 2. Local Setup
 ```bash
 # Clone the repository
 git clone https://github.com/Shiva-Ganesh-Varikuppala/DBMS.git
 
-# Navigate into the project directory
+# Enter the repository directory
 cd DBMS
 ```
 
-## 👨‍💻 Author
-SHIVAGANESH VARIKUPPALA
+### 3. Executing a Lab Script
+To run an experiment directly via the MySQL CLI:
+
+```bash
+# Run Lab 3 (Basic SQL & Aggregation)
+mysql -u root -p < "Lab 3/Experiment 3.sql"
+
+# Run Lab 4 (Joins & Subqueries)
+mysql -u root -p < "Lab 4/Experiment 4.sql"
+
+# Run Lab 5 (Views & CTEs)
+mysql -u root -p < "Lab 5/Experiment 5.sql"
+```
+
+Alternatively, open any `.sql` file in **MySQL Workbench** and execute with `Ctrl+Shift+Enter` (Windows/Linux) or `Cmd+Shift+Enter` (macOS).
 
 ---
+
+## 📑 Academic Declaration
+
+> **Certification of Original Work:**  
+> I hereby declare that the SQL scripts, relational schemas, ER diagrams, and documentation in this repository represent my practical work for the Database Management Systems Laboratory course. All experiments adhere to institutional academic integrity standards and best database design practices.
+>
+> — **Shiva Ganesh Varikuppala**  
+> *Department of Computer Science & Engineering*
+
+---
+
 <p align="center">
-  ⭐ If you find this repository useful, consider giving it a star!
-  <br>
-  Maintained for academic purposes and continuous learning in database architecture and optimization.
-  <i>Learning DBMS through practical implementation.</i>
+  <sub>Maintained for academic coursework, practical assessment, and reference.</sub>
 </p>
