@@ -36,8 +36,7 @@ git clone https://github.com/coder-with-ai/DBMS-Lab_File.git
 cd DBMS-Lab_File
 
 ## 👨‍💻 Author
-ANUJ SAINI 
-
+SHIVAGANESH VARIKUPPALA
 ---
 <p align="center">
   ⭐ If you find this repository useful, consider giving it a star!
