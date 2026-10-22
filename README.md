@@ -39,37 +39,46 @@ This laboratory repository documents a structured, hands-on progression through 
 
 ```text
 DBMS/
-├── README.md                      # Comprehensive course overview and index
-├── Lab 1/                         # Conceptual ER Modeling
-│   ├── Practical 1.pdf            # Lab report & conceptual ER diagram
-│   └── Readme.md                  # Problem definition & entity design
-├── Lab 2/                         # Relational Schema Design & DDL
-│   ├── Practical 2.pdf            # Relational mapping & constraint report
-│   └── Readme.md                  # Table schemas & integrity rules
-├── Lab 3/                         # Schema Construction & Aggregation
-│   ├── Experiment 3.sql           # DDL, 30+ record population, DQL queries
-│   ├── Outputs/                   # Execution output artifacts
-│   │   └── outputs.md
-│   └── Readme.md                  # Lab documentation & query descriptions
-├── Lab 4/                         # Advanced Relational Joins & Subqueries
-│   ├── Experiment 4.sql           # Multi-table joins, subqueries & EXPLAIN
-│   ├── Output.md                  # Execution snapshots & query plan proof
-│   └── Readme.md                  # Theoretical rationale & query notes
-├── Lab 5/                         # Views & Recursive Common Table Expressions
-│   ├── Experiment 5.sql           # Simple/complex views, CTE hierarchy traversal
-│   ├── Output.md                  # Terminal & GUI verification snapshots
-│   └── Readme.md                  # Updatability rules & recursive CTE notes
-├── Lab 6/                         # Procedural PL/SQL: Procedures & Triggers
-│   ├── Experiment 6.sql           # Stored procedures & salary audit triggers
-│   └── Readme.md                  # Procedure specification & trigger lifecycle
-├── Lab 7/                         # Database Normalization (UNF to BCNF)
-│   └── Readme.md                  # Lossless decomposition & dependency preservation
-├── Lab 8/                         # Concurrency Control & ACID Transactions
-│   └── Readme.md                  # Transaction isolation levels & SAVEPOINT handling
-├── Lab 9/                         # Index Structures & Performance Tuning
-│   └── Readme.md                  # B-Tree composite indexing & execution cost analysis
-└── Lab 10/                        # Query Optimization & Execution Plan Analysis
-    └── Readme.md                  # Bottleneck diagnosis & query restructuring
+├── README.md                     
+├── Lab 1/                        
+│   ├── Practical 1.pdf           
+│   └── Readme.md                 
+├── Lab 2/                        
+│   ├── Practical 2.pdf           
+│   └── Readme.md                 
+├── Lab 3/                        
+│   ├── Experiment 3.sql          
+│   ├── Outputs/                  
+│   │   └── outputs.m
+│   └── Readme.md                 
+├── Lab 4/                        
+│   ├── Experiment 4.sql          
+│   ├── Output.md                 
+│   └── Readme.md                 
+├── Lab 5/                        
+│   ├── Experiment 5.sql          
+│   ├── Output.md                 
+│   └── Readme.md                 
+├── Lab 6/                        
+│   ├── Experiment 5.sql          
+│   ├── Output.md                 
+│   └── Readme.md                 
+├── Lab 7/                        
+│   ├── Experiment 5.sql          
+│   ├── Output.md                 
+│   └── Readme.m
+├── Lab 8/                        
+│   ├── Experiment 5.sql          
+│   ├── Output.md                 
+│   └── Readme.m
+├── Lab 9/                        
+│   ├── Experiment 5.sql          
+│   ├── Output.md                 
+│   └── Readme.m
+└── Lab 10/                       
+    ├── Experiment 5.sql          
+    ├── Output.md                 
+    └── Readme.m
 ```
 
 ---
@@ -84,10 +93,10 @@ DBMS/
 | **04** | **Complex Joins & Subqueries** | Self joins, 3-way joins, correlated subqueries, set operations, `EXPLAIN` | [Documentation](./Lab%204/Readme.md) | [Experiment 4.sql](./Lab%204/Experiment%204.sql) | ✅ Verified |
 | **05** | **Views & Recursive CTEs** | Complex updatable views, self-referencing hierarchy, `WITH RECURSIVE` | [Documentation](./Lab%205/Readme.md) | [Experiment 5.sql](./Lab%205/Experiment%205.sql) | ✅ Verified |
 | **06** | **PL/SQL Procedures & Triggers** | Stored procedures with exception handling, `BEFORE/AFTER` audit triggers | [Documentation](./Lab%206/Readme.md) | [Experiment 6.sql](./Lab%206/Experiment%206.sql) | ✅ Verified |
-| **07** | **Schema Normalization** | Functional dependencies, 1NF, 2NF, 3NF, BCNF lossless verification | [Documentation](./Lab%207/Readme.md) | *Schema in prep* | ⏳ In Progress |
-| **08** | **Transactions & Concurrency** | ACID compliance, `SAVEPOINT`, dirty/non-repeatable read simulation | [Documentation](./Lab%208/Readme.md) | *Scripts in prep* | ⏳ In Progress |
-| **09** | **Indexing & Query Performance** | 5,000+ rows dataset, B-Tree indexes, cardinality, `EXPLAIN ANALYZE` | [Documentation](./Lab%209/Readme.md) | *Scripts in prep* | ⏳ In Progress |
-| **10** | **Query Profiling & Optimization** | Table scan elimination, query refactoring, index hinting | [Documentation](./Lab%2010/Readme.md) | *Scripts in prep* | ⏳ In Progress |
+| **07** | **Schema Normalization** | Functional dependencies, 1NF, 2NF, 3NF, BCNF lossless verification | [Documentation](./Lab%207/Readme.md) | [Experiment 7.sql](./Lab%207/Experiment%207.sql) | ✅ Verified |
+| **08** | **Transactions & Concurrency** | ACID compliance, `SAVEPOINT`, dirty/non-repeatable read simulation | [Documentation](./Lab%208/Readme.md) | [Experiment 8.sql](./Lab%208/Experiment%208.sql) | ✅ Verified |
+| **09** | **Indexing & Query Performance** | 5,000+ rows dataset, B-Tree indexes, cardinality, `EXPLAIN ANALYZE` | [Documentation](./Lab%209/Readme.md) | [Experiment 9.sql](./Lab%209/Experiment%209.sql) | ✅ Verified |
+| **10** | **Query Profiling & Optimization** | Table scan elimination, query refactoring, index hinting | [Documentation](./Lab%2010/Readme.md) | [Experiment 10.sql](./Lab%2010/Experiment%2010.sql) | ✅ Verified |
 
 ---
 
