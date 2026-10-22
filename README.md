@@ -154,6 +154,7 @@ cd DBMS
 ### 3. Executing a Lab Script
 To run an experiment directly via the MySQL CLI:
 
+Examples: 
 ```bash
 # Run Lab 3 (Basic SQL & Aggregation)
 mysql -u root -p < "Lab 3/Experiment 3.sql"
